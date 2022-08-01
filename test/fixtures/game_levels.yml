@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  isAdmin: false
+  id: 1
+  user: MyString
+  level_no: 1
+  balance: 1
+
+two:
+  isAdmin: false
+  id: 1
+  user: MyString
+  level_no: 1
+  balance: 1

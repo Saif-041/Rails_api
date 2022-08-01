@@ -1,0 +1,2 @@
+class GameLevel < ApplicationRecord
+end

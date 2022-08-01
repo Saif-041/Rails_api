@@ -1,0 +1,42 @@
+<%= form_with(model: game_level) do |form| %>
+  <% if game_level.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(game_level.errors.count, "error") %> prohibited this game_level from being saved:</h2>
+
+      <ul>
+        <% game_level.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :isAdmin, style: "display: block" %>
+    <%= form.check_box :isAdmin %>
+  </div>
+
+  <div>
+    <%= form.label :id, style: "display: block" %>
+    <%= form.number_field :id %>
+  </div>
+
+  <div>
+    <%= form.label :user, style: "display: block" %>
+    <%= form.text_field :user %>
+  </div>
+
+  <div>
+    <%= form.label :level_no, style: "display: block" %>
+    <%= form.number_field :level_no %>
+  </div>
+
+  <div>
+    <%= form.label :balance, style: "display: block" %>
+    <%= form.number_field :balance %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
